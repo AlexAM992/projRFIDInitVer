@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.1 -->
+<interface>
+  <requires lib="gtk+" version="2.24"/>
+  <object class="GtkWindow" id="gtk_wnd">
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">RFID Access Control</property>
+    <property name="default_width">440</property>
+    <property name="default_height">250</property>
+    <signal name="destroy" handler="on_gtk_wnd_destroy" swapped="no"/>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="gtkfxd_main">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkEntry" id="gtk_edt_card_id">
+            <property name="width_request">120</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="max_width_chars">1</property>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">93</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="gtk_lbl_access">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Access</property>
+          </object>
+          <packing>
+            <property name="x">50</property>
+            <property name="y">68</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="gtkbtn_clear">
+            <property name="label" translatable="yes">Clear</property>
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="image_position">bottom</property>
+            <signal name="clicked" handler="on_gtkbtn_clear_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">85</property>
+            <property name="y">190</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="gtklbl_mainlbl">
+            <property name="width_request">150</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Access Control</property>
+            <property name="width_chars">0</property>
+            <property name="max_width_chars">0</property>
+          </object>
+          <packing>
+            <property name="x">175</property>
+            <property name="y">25</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="gtk_btn_get_access">
+            <property name="label" translatable="yes">Get CardID</property>
+            <property name="width_request">110</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_gtk_btn_get_access_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">250</property>
+            <property name="y">190</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
