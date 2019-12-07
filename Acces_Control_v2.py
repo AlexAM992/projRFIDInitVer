@@ -45,5 +45,7 @@ if __name__ == "__main__":
     main=MainGui()
     gtk.main()
 
+#192.168.43.157
+
  
 
